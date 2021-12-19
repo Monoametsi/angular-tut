@@ -9,6 +9,6 @@ export class AppComponent {
   title:string = 'TODOLIST';
   
   AddTask(){
-	console.log('Add Task');
+	alert('Add Task');
   }
 }
