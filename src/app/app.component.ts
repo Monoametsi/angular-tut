@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title:string = 'TODOLIST';
+  
+  AddTask(){
+	console.log('Add Task');
+  }
 }
