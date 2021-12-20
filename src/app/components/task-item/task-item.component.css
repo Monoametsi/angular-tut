@@ -1,0 +1,30 @@
+.task-item{
+    display: flex;
+    padding: 1rem 12px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.left, .right{
+    display: flex;
+}
+
+.checkbox-cont, .icon:first-child{
+    margin-right: 1rem;
+}
+
+.task-item{
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.icon{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: #fff;
+}

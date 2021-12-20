@@ -1,0 +1,5 @@
+.list-of-task-cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

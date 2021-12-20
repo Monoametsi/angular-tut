@@ -1,7 +1,14 @@
 <div class="app-cont">
   <div class="app">
     <app-header></app-header>
-	<app-button text="+" (btnClick)="AddTask()"></app-button>
-	<app-tasks></app-tasks>
+	  
+    <div class="form-cont">
+      <app-button text="+" (btnClick)="AddTask()"></app-button>
+	  </div>
+    <app-tasks></app-tasks>
+    
+    <div>
+      <app-delete-btn></app-delete-btn>
+    </div>
   </div>
 </div>

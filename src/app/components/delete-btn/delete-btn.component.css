@@ -1,0 +1,13 @@
+.close{
+    padding-left: 8px;
+}
+
+.delete{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.delete > button{
+    font-size: 1.2rem;
+}
