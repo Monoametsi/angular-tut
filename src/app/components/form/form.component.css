@@ -1,0 +1,22 @@
+.input-field-cont{
+    display: flex;
+}
+
+.input-field-cont, .input-field{
+    width: 100%;
+}
+
+.input-field{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 9px 18px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.input-field:focus{
+    border: 1px solid #000;
+}

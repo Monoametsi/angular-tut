@@ -23,7 +23,11 @@ export class TaskItemComponent implements OnInit {
   }
   
   onUpdate(){
+    console.log('Update Requested');
+  }
 
+  Onclick(event: any){
+    console.log(event.target.checked === true)
   }
 
 }

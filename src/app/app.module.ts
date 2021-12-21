@@ -8,7 +8,8 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { DeleteBtnComponent } from './components/delete-btn/delete-btn.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { FormComponent } from './components/form/form.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http'
     ButtonComponent,
     TasksComponent,
     TaskItemComponent,
-    DeleteBtnComponent
+    DeleteBtnComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
