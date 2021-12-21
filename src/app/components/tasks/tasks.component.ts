@@ -9,10 +9,10 @@ import {TASKS} from '../../mock-task'
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
-  tasks: Task[] = TASKS;
+  tasks: Task[] = [];
 
   constructor(private taskService: TaskService) { }
-  
+
   ngOnInit(): void {
     this.tasks = this.taskService.getTasks();
   }
