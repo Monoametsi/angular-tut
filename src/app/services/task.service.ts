@@ -8,7 +8,7 @@ import {TASKS} from '../mock-task'
 })
 export class TaskService {
 
-  constructor() { }
+  constructor() {}
 
   getTasks(): Observable<Task[]> {
     
