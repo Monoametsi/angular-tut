@@ -8,6 +8,7 @@ import {TASKS} from '../../mock-task'
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
+//a
 export class TasksComponent implements OnInit {
   tasks: Task[] = [];
 
@@ -24,5 +25,5 @@ export class TasksComponent implements OnInit {
       this.tasks = this.tasks.filter(t => t.id !==  task.id)
     ));
   }
-  
+
 }
