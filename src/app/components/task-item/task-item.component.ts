@@ -2,6 +2,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {Task} from '../../task'
 import { faTimes, faPaintBrush } from '@fortawesome/free-solid-svg-icons';
 
+const tasker: any[] = [];
+
 @Component({
   selector: 'app-task-item',
   templateUrl: './task-item.component.html',
@@ -12,12 +14,11 @@ export class TaskItemComponent implements OnInit {
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
   faTimes = faTimes;
   faPaintBrush = faPaintBrush;
-   
+  
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  
+  ngOnInit(): void {}
+  
   onDelete(task: any){
     this.onDeleteTask.emit(task);
   }
@@ -25,9 +26,13 @@ export class TaskItemComponent implements OnInit {
   onUpdate(){
     console.log('Update Requested');
   }
-
-  Onclick(event: any){
-    console.log(event.target.checked === true)
+  
+  Onclick(event: any, task: any){
+    if(event.target.checked){
+		tasker.push(task)
+	}
+	
+	console.log(tasker);
   }
 
 }
